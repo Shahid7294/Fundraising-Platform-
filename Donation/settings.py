@@ -26,7 +26,15 @@ SECRET_KEY = 'django-insecure-u&rpsew6d7hwf1swq16@z47*=zzq1%rn-&jf_y0a*^tf2e#n&w
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "localhost",
+    "127.0.0.1",
+    "fundraising-platform-69s8.onrender.com",
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://fundraising-platform-69s8.onrender.com",
+]
 
 
 # Application definition
